@@ -1,0 +1,18 @@
+---
+title: "Dynamiczny raport dla klasyfikatora"
+output: pdf_document
+params:
+  n: NA
+  k: NA
+  l: NA
+  m: NA
+---
+
+Szansa na raka krtani:
+`r params$n`  
+Szansa na raka płuc:
+`r params$k`  
+Szansa na raka piersi:
+`r params$l`  
+Szansa na bycie zdrowym:
+`r params$m`  

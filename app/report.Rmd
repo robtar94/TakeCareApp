@@ -1,0 +1,44 @@
+---
+title: "Dynamiczny raport"
+output: pdf_document
+params:
+  n: NA
+  k: NA
+  l: NA
+  m: NA
+  p: NA
+  r: NA
+  z: NA
+---
+
+Wiek pacjenta(w latach):
+`r params$n`
+
+Największa średnica elementu stałego (w mm): `r params$k` 
+
+Obecność wodobrzusza:
+```{r, echo=FALSE}
+if(params$l==1) {print("Tak")}else {print("Nie")}
+```
+
+Obecność przepływu krwi w projekcji brodawkowatej:
+```{r, echo=FALSE}
+if(params$m==1) {print("Tak")}else {print("Nie")}
+```
+Nieregularna wewnętrzna ściana torbieli:
+```{r, echo=FALSE}
+if(params$p==1) {print("Tak")}else {print("Nie")}
+```
+Obecność cieni akustycznych:
+```{r, echo=FALSE}
+if(params$r==1) {print("Tak")}else {print("Nie")}
+```
+Surowa wartość predyktora:
+```{r, echo=FALSE}
+params$z
+```
+Klasa guza: 
+```{r, echo=FALSE}
+if(params$z>0.1){print("złośliwy")}else{print("łagodny")}
+```
+Próg złośliwości: 0.1

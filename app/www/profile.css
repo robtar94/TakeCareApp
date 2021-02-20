@@ -1,0 +1,22 @@
+#profileData{
+	display:flex;
+	justify-content:center;
+	max-width:700px;
+	align-self:center;	
+	
+}
+
+#profileData > .row,#profileData > .row > .well{
+	width:100%;
+#background-color:#00A896;
+}
+
+#profileData > .row .well{
+	display:flex;
+justify-content:center;
+flex-direction:column;
+	color:white;
+background-color:#00A896;
+	
+}
+

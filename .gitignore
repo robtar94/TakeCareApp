@@ -1,0 +1,5 @@
+.idea
+app/.Rhistory
+backend/target/
+db.sqlite
+backend/.idea/
